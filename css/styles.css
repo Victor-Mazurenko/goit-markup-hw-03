@@ -15,6 +15,19 @@ body {
   font-family: 'Roboto', sans-serif;
   font-size: 14px;
 }
+h1,
+h2,
+h3,
+p,
+ul {
+  margin: 0;
+}
+
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
 
 /*Шапка сайта*/
 .page-header .logo-color {
@@ -42,6 +55,7 @@ body {
 .site-nav .link-btn:focus {
   color: var(--decor-color);
 }
+
 .auth-nav .btn-link {
   color: var(--second-text-color);
 
@@ -58,9 +72,43 @@ body {
 .site-nav .current {
   color: var(--decor-color);
 }
+.site-nav{
+  display: flex;
+  padding: 0;
+}
+.site-nav .link:not(:last-child){
+  padding-right: 50px;
+}
+
+.site-nav .link-btn{
+  display: inline-block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+.site-nav:first-child{
+  margin-left: 93px;
+}
+.auth-nav{
+  display: flex;
+}
+.auth-nav .link:not(:last-child){
+  padding-right: 50px;
+}
+
+.auth-nav{
+  padding-left: 0;
+  margin-left: auto;
+}
+.navigation{
+  display: flex;
+  align-items: center;
+}
 /*Секция герой*/
 .hero {
   background-color: var(--back-color);
+  text-align: center;
+  width: 1600px;
+  height: 600px;
 }
 .hero .hero-title {
   color: var(--third-text-color);
@@ -81,7 +129,6 @@ body {
   font-size: 16px;
   line-height: 1.87;
   align-items: center;
-  text-align: center;
   letter-spacing: 0.06em;
 }
 .hero .btn-hero:hover,
@@ -196,6 +243,11 @@ body {
 }
 
 /*ПОРТФОЛИО*/
+
+.header-page{
+  border-bottom: 1px;
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;

@@ -9,33 +9,44 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <!--Шапка Сайта-->
   <body>
     <header class="page-header">
-      <a href="./index.html" class="logo"><span class="logo-color">Web</span>Studio</a>
-      <nav class="site-nav">
-        <ul style="list-style: none">
-          <li>
-            <a href="./index.html" class="link-btn">Студия</a>
-          </li>
-          <li>
-            <a href="./portfolio.html" class="link-btn current">Портфолио</a>
-          </li>
-          <li>
-            <a href="#" class="link-btn">Контакты</a>
-          </li>
-        </ul>
-      </nav>
-      <ul class="auth-nav" style="list-style: none">
-        <li>
-          <a href="mailto:info@devstudio.com" class="btn-link">info@devstudio.com</a>
-        </li>
-        <li>
-          <a href="tel:+380961111111" class="btn-link">+38 096 111 11 11</a>
-        </li>
-      </ul>
+      <section class="header-page">
+        <div class="container navigation">
+          <a href="./index.html" class="logo"><span class="logo-color">Web</span>Studio</a>
+          <nav>
+            <ul style="list-style: none" class="site-nav">
+              <li class="link">
+                <a href="./index.html" class="link-btn">Студия</a>
+              </li>
+              <li class="link">
+                <a href="./portfolio.html" class="link-btn current">Портфолио</a>
+              </li>
+              <li class="link">
+                <a href="#" class="link-btn">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+          <ul class="auth-nav" style="list-style: none">
+            <li class="link">
+              <a href="mailto:info@devstudio.com" class="btn-link">info@devstudio.com</a>
+            </li>
+            <li class="link">
+              <a href="tel:+380961111111" class="btn-link">+38 096 111 11 11</a>
+            </li>
+          </ul>
+        </div>
+      </section>
     </header>
     <main class="main-portfolio">
       <h1 class="visually-hidden">Категории</h1>
