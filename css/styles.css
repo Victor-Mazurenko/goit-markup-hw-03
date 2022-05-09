@@ -27,7 +27,7 @@ ul {
 }
 
 .container {
-  width: 1170px;
+  width: 1230px;
   padding-left: 15px;
   padding-right: 15px;
   margin-right: auto;
@@ -115,7 +115,6 @@ ul {
 .hero {
   background-color: var(--back-color);
   text-align: center;
-  width: 1600px;
   height: 600px;
 }
 .hero .hero-title {
@@ -393,11 +392,25 @@ ul {
 .main-portfolio .flex{
   display: flex;
   flex-wrap: wrap;
+  padding-left: 0;
 }
 
-/*.main-portfolio .list:nth-child(3n){
-  margin-right: 30px;
-}*/
+.main-portfolio .list{
+margin-right: 30px;
+margin-bottom: 30px;
+text-align: center;
+border-right: 1px solid #EEEEEE;
+border-bottom: 1px solid #EEEEEE;
+border-left: 1px solid #EEEEEE;
+}
+
+.main-portfolio .list:nth-child(3n){
+  margin-right: 0;
+}
+
+.main-portfolio .list:nth-last-child(-n+3){
+  margin-bottom: 94px;
+}
 
 .main-portfolio .title {
   color: var(--text-color);
