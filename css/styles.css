@@ -443,3 +443,7 @@ border-left: 1px solid #EEEEEE;
   background-color: var(--decor-color);
   color: var(--third-text-color);
 }
+
+.containers{
+  padding: 20px 24px;
+}
