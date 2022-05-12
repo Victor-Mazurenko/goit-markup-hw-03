@@ -368,6 +368,9 @@ ul {
 }
 
 /*ПОРТФОЛИО*/
+
+
+
 .page-header{
   border-bottom: 2px solid #ECECEC;
 }
@@ -421,24 +424,26 @@ ul {
   margin-bottom: 50px;
 }
 
+
 .main-portfolio .flex{
   display: flex;
   flex-wrap: wrap;
   padding-left: 0;
+  margin-left: 0;
 }
 
 .main-portfolio .list{
 margin-right: 30px;
 margin-bottom: 30px;
-border-right: 1px solid #EEEEEE;
-border-bottom: 1px solid #EEEEEE;
-border-left: 1px solid #EEEEEE;
 }
 
 .main-portfolio .list:nth-child(3n){
   margin-right: 0;
 }
 
+.main-portfolio .list:nth-last-child(-n + 3){
+  margin-bottom: 0;
+}
 
 .main-portfolio .title {
   color: var(--text-color);
@@ -470,5 +475,8 @@ border-left: 1px solid #EEEEEE;
 }
 
 .containers{
-  padding: 20px 24px;
+padding: 20px 24px;
+border-right: 1px solid #EEEEEE;
+border-bottom: 1px solid #EEEEEE;
+border-left: 1px solid #EEEEEE;
 }
