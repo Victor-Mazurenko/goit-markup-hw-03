@@ -115,10 +115,9 @@ ul {
 .hero {
   background-color: var(--back-color);
   text-align: center;
-  height: 600px;
+  padding: 200px 0;
 }
 .hero .hero-title {
-  padding-top: 200px;
   margin: 0;
   flex-wrap: wrap;
   align-content: center;
@@ -130,11 +129,12 @@ ul {
   line-height: 1.36;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+  max-width: 650px;
   text-align: center;
+  margin: auto;
+  margin-bottom: 30px;
 }
-.pre{
-  margin: 0;
-}
+
 .hero .btn-hero {
   color: var(--third-text-color);
   background-color: var(--decor-color);
@@ -156,6 +156,9 @@ ul {
   background-color: var(--second-decor-color);
 }
 /*Секция особенности*/
+.caption{
+  padding: 94px 0;
+}
 
 .caption .caption-title {
   position: absolute;
@@ -175,7 +178,6 @@ ul {
 }
 
 .caption .caption-titles {
-  margin-top: 94px;
   
   color: var(--text-color);
 
@@ -200,8 +202,11 @@ ul {
 }
 
 /*Секция чем мы занимаемся*/
+.work{
+  padding-bottom: 94px;
+}
+
 .work .work-title {
-  margin-top: 94px;
 
   color: var(--text-color);
 
@@ -213,11 +218,7 @@ ul {
 
 .work .title{
   display: flex;
-}
-
-.work .titles{
-  margin-top: 50px;
-  margin-bottom: 94px;
+  padding-top: 50px;
 }
 
 .work .titles:not(:last-child){
@@ -227,10 +228,10 @@ ul {
 /*Секция наша команда*/
 .team {
   background-color: var(--third-back-color);
+  padding: 94px 0;
 }
 
 .team .team-title {
-  padding-top: 94px;
 
   color: var(--text-color);
 
@@ -238,6 +239,8 @@ ul {
   font-size: 36px;
   line-height: 1.16;
   text-align: center;
+  
+  padding-bottom: 50px;
 }
 
 .team .title{
@@ -246,13 +249,12 @@ ul {
 
 .team .titles{
   text-align: center;
-
-  padding-bottom: 30px;
-  margin-top: 50px;
+  
   border-right: 2px solid #ECECEC;
   border-bottom: 2px solid #ECECEC;
   border-left: 2px solid #ECECEC;
-  margin-bottom: 94px;
+  border-radius: 0px 0px 4px 4px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 
   background-color: var(--third-text-color);
 }
@@ -262,8 +264,6 @@ ul {
 }
 
 .team .workers {
-  margin-top: 30px;
-
   color: var(--text-color);
 
   font-weight: 500;
@@ -280,10 +280,15 @@ ul {
   font-size: 16px;
   line-height: 1.18;
 }
+
+.wrapper{
+  padding: 30px 0;
+}
+
 /*Футер*/
 .footer {
   background-color: var(--back-color);
-  height: 252px;
+  padding: 60px 0; 
 }
 
 .footer .title{
@@ -294,7 +299,7 @@ ul {
 
   color: var(--decor-color);
 
-  font-family: 'Raleway' sans-serif;
+  font-family: 'Raleway';
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
@@ -312,6 +317,10 @@ ul {
   text-decoration: none;
 }
 
+.footer .title{
+  padding: 0;
+}
+
 .footer .map {
   padding-top: 20px;
 
@@ -320,6 +329,7 @@ ul {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.5;
+  font-style: normal;
 }
 
 .footer .link {
@@ -339,7 +349,7 @@ ul {
 }
 
 /*ПОРТФОЛИО*/
-.header-page{
+.page-header{
   border-bottom: 2px solid #ECECEC;
 }
 
@@ -357,6 +367,8 @@ ul {
 }
 
 .main-portfolio .link {
+  padding: 6px 22px;
+
   background-color: #f5f4fa;
   color: var(--text-color);
 
@@ -373,10 +385,6 @@ ul {
   margin-right: 8px;
 }
 
-.main-portfolio .tittles{
-  margin-bottom: 50px;
-}
-
 .main-portfolio .link:hover,
 .main-portfolio .link:focus {
   background-color: var(--decor-color);
@@ -387,6 +395,7 @@ ul {
   display: flex;
   justify-content: center;
   margin-top: 94px;
+  margin-bottom: 50px;
 }
 
 .main-portfolio .flex{
@@ -398,7 +407,6 @@ ul {
 .main-portfolio .list{
 margin-right: 30px;
 margin-bottom: 30px;
-text-align: center;
 border-right: 1px solid #EEEEEE;
 border-bottom: 1px solid #EEEEEE;
 border-left: 1px solid #EEEEEE;
@@ -435,9 +443,6 @@ border-left: 1px solid #EEEEEE;
   text-decoration: none;
 }
 
-.main-portfolio .decoration{
-
-}
 
 .main-portfolio .current {
   background-color: var(--decor-color);
